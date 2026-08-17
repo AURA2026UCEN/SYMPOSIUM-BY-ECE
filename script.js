@@ -12,7 +12,7 @@ const GOOGLE_FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSdggXWO-T6vMVb
 /* Optional social links — replace # with your official pages. */
 const SOCIAL_LINKS = {
   instagram: "https://www.instagram.com/techvox_.clique.__?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
-  email: "mailto:aura26ece@gmail.com"
+  email: "mailto:aura2026ece@gmail.com"
 };
 
 const EVENTS = {
