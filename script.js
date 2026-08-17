@@ -51,7 +51,7 @@ const EVENTS = {
     {
       title: "PAPER PRESENTATION",
       team: "1–3 Members",
-      about: "A three-round IDEA presentation journey — from abstract submission to PPT evaluation to a final showdown before the judges.",
+      about: "A three-round PAPER presentation journey — from abstract submission to PPT evaluation to a final showdown before the judges.",
       rounds: [
         {
           heading: "ROUND 1 — ABSTRACT SUBMISSION",
@@ -354,7 +354,7 @@ $("#goToGoogleForm").addEventListener("click", () => {
 });
 
 function countdown() {
-  const target = new Date("2026-09-03T00:00:00").getTime();
+  const target = new Date("2026-09-09T00:00:00").getTime();
   const now = Date.now();
   const diff = Math.max(0, target - now);
 
