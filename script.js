@@ -49,7 +49,7 @@ const EVENTS = {
       ]
     },
     {
-      title: "IDEA PRESENTATION",
+      title: "PAPER PRESENTATION",
       team: "1–3 Members",
       about: "A three-round IDEA presentation journey — from abstract submission to PPT evaluation to a final showdown before the judges.",
       rounds: [
@@ -90,7 +90,7 @@ const EVENTS = {
       ]
     },
     {
-      title: "TECH QUIZ",
+      title: "QUIZ",
       team: "1 individual",
       about: "A challenging technical quiz designed to test participants' knowledge, problem-solving ability and technical understanding across multiple rounds",
       rounds: [
@@ -176,7 +176,7 @@ const EVENTS = {
   ],
   nonTechnical: [
     {
-      title: "IPL AUCTION",
+      title: "POWER PLAY",
       team: "3 Members",
       about: "Build your dream franchise, read the room and make the smartest calls in a high-energy auction strategy battle.",
       rules: [
@@ -198,9 +198,11 @@ const EVENTS = {
       ]
     },
     {
-      title: "CINEBEAT",
-      team: "2 Members",
-      about: "A lively cinema-and-music challenge for people who can recognise the beat, remember the scene and connect the clue.",
+      title: "TEAM FUSION",
+      team: "3 Members",
+      about: "🏆 TEAM TITANS
+
+Team Titans is a fun-filled, action-packed non-technical event featuring a variety of exciting team-based and coordination activities. Participants compete in different challenges involving balloons, cups, sticky notes, balls, paper, dumb charades, Chinese talk, memory games and more. Each activity is designed to encourage team coordination, communication, creativity, memory, quick thinking and friendly competition. Teams must work together, plan their moves and support each other to complete challenges and earn points. With a mix of fun, teamwork and exciting activities, Team Titans promises an entertaining experience for both participants and spectators. 🎈🤝🧠🏆",
       rules: [
         "Each team consists of 2 members.",
         "Rounds and question formats will be announced by the coordinators.",
