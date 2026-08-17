@@ -7,12 +7,12 @@
       official rules are ready.
    ========================================================= */
 
-const GOOGLE_FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSc8-qwuyssZRropoGAW5ywco-_AvpqjVkLy3hbNNWugnGs_Zg/viewform?usp=publish-editor";
+const GOOGLE_FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSdggXWO-T6vMVb6qSwwgfqSh6kCjlM8F31QdFAU8MNYPbxUcQ/viewform?usp=publish-editor";
 
 /* Optional social links — replace # with your official pages. */
 const SOCIAL_LINKS = {
   instagram: "https://www.instagram.com/techvox_.clique.__?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
-  email: "mailto:aura2026ece@gmail.com"
+  email: "mailto:aura26ece@gmail.com"
 };
 
 const EVENTS = {
@@ -51,7 +51,7 @@ const EVENTS = {
     {
       title: "PAPER PRESENTATION",
       team: "1–3 Members",
-      about: "A three-round PAPER presentation journey — from abstract submission to PPT evaluation to a final showdown before the judges.",
+      about: "A three-round paper presentation journey — from abstract submission to PPT evaluation to a final showdown before the judges.",
       rounds: [
         {
           heading: "ROUND 1 — ABSTRACT SUBMISSION",
@@ -181,7 +181,7 @@ const EVENTS = {
       about: "Build your dream franchise, read the room and make the smartest calls in a high-energy auction strategy battle.",
       rules: [
         "Each team consists of 3 members.",
-        "Teams must follow the auction procedure and budget rules announced by coordinators.",
+        "Teams must follow the game procedure and budget rules announced by coordinators.",
         "All bidding decisions must be made within the permitted format.",
         "The decision of the event coordinators will be final."
       ]
@@ -200,12 +200,13 @@ const EVENTS = {
     {
       title: "TEAM FUSION",
       team: "3 Members",
-      about:"Team Fusion is a fun filled,", 
-            "action-packed non-technical event featuring a variety of exciting team-based and coordination activities.",
-            "Participants compete in different challenges involving balloons, cups, sticky notes, balls, paper, dumb charades, Chinese talk, memory games and more.",
-            "Each activity is designed to encourage team coordination, communication, creativity, memory, quick thinking and friendly competition.",
-            "Teams must work together, plan their moves and support each other to complete challenges and earn points. With a mix of fun, teamwork and exciting activities, Team Titans promises an entertaining experience for both participants and spectators. 🎈🤝🧠🏆"
-
+      about: "Team Fusion is a fun-filled, action-packed non-technical event featuring a variety of exciting team-based and coordination activities. Participants compete in different challenges involving balloons, cups, sticky notes, balls, paper, dumb charades, Chinese talk, memory games and more. Each activity is designed to encourage team coordination, communication, creativity, memory, quick thinking and friendly competition. Teams must work together, plan their moves and support each other to complete challenges and earn points. With a mix of fun, teamwork and exciting activities, Team Titans promises an entertaining experience for both participants and spectators. 🎈🤝🧠🏆",
+      rules: [
+        "Each team consists of 3 members.",
+        "Rounds and question formats will be announced by the coordinators.",
+        "Use of external assistance is not permitted.",
+        "The decision of the event coordinators will be final."
+      ]
     },
     {
       title: "THE DETECTIVE CHRONICLES",
@@ -296,7 +297,7 @@ function openEvent(category, index) {
   const roundsWrap = $("#modalRounds");
 
   if (event.rounds) {
-    /* Round-based structured content (e.g. IDEA Presentation) */
+    /* Round-based structured content (e.g. Paper Presentation) */
     rulesHeading.textContent = event.title;
     rulesList.hidden = true;
     rulesList.innerHTML = "";
