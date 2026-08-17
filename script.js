@@ -200,8 +200,11 @@ const EVENTS = {
     {
       title: "TEAM FUSION",
       team: "3 Members",
-      about:
-"Team Fusion is a fun filled," "action-packed non-technical event featuring a variety of exciting team-based and coordination activities. Participants compete in different challenges involving balloons, cups, sticky notes, balls, paper, dumb charades, Chinese talk, memory games and more. Each activity is designed to encourage team coordination, communication, creativity, memory, quick thinking and friendly competition. Teams must work together, plan their moves and support each other to complete challenges and earn points. With a mix of fun, teamwork and exciting activities, Team Titans promises an entertaining experience for both participants and spectators. 🎈🤝🧠🏆",
+      about:["Team Fusion is a fun filled,", 
+            "action-packed non-technical event featuring a variety of exciting team-based and coordination activities.",
+            "Participants compete in different challenges involving balloons, cups, sticky notes, balls, paper, dumb charades, Chinese talk, memory games and more.",
+            "Each activity is designed to encourage team coordination, communication, creativity, memory, quick thinking and friendly competition.",
+            "Teams must work together, plan their moves and support each other to complete challenges and earn points. With a mix of fun, teamwork and exciting activities, Team Titans promises an entertaining experience for both participants and spectators. 🎈🤝🧠🏆"]
 
     },
     {
