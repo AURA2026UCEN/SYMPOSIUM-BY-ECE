@@ -387,7 +387,7 @@ $("#goToGoogleForm").addEventListener("click", () => {
 });
 
 function countdown() {
-  const target = new Date("2026-09-09T00:00:00").getTime();
+  const target = new Date("2026-09-16T00:00:00").getTime();
   const now = Date.now();
   const diff = Math.max(0, target - now);
 
