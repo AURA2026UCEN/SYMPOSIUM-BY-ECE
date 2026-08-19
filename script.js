@@ -7,7 +7,7 @@
       official rules are ready.
    ========================================================= */
 
-const GOOGLE_FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSdggXWO-T6vMVb6qSwwgfqSh6kCjlM8F31QdFAU8MNYPbxUcQ/viewform?usp=publish-editor";
+const GOOGLE_FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSdAFv1JA7kPzM8hoWFm8qoCtGYBGGSaMhi81Zt0oecHAKtRlg/viewform?usp=publish-editor";
 
 /* WhatsApp group links — paste the separate group link for each event. */
 const WHATSAPP_GROUP_LINKS = {
