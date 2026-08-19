@@ -9,10 +9,22 @@
 
 const GOOGLE_FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSdggXWO-T6vMVb6qSwwgfqSh6kCjlM8F31QdFAU8MNYPbxUcQ/viewform?usp=publish-editor";
 
+/* WhatsApp group links — paste the separate group link for each event. */
+const WHATSAPP_GROUP_LINKS = {
+  "CIRCUIT DEBUGGING": "https://chat.whatsapp.com/CAeg6KjZWMh6AFv0Aw1vEo?s=cl&p=a&ilr=1",
+  "PAPER PRESENTATION": "https://chat.whatsapp.com/LsBvZV1v8bH9J8jE9GgrZk?s=cl&p=a&ilr=1",
+  "QUIZ": "https://chat.whatsapp.com/C7cot5rXmKm8VVSghhBIH8?s=cl&p=a&ilr=1",
+  "TECHQUEST": "https://chat.whatsapp.com/Cruhwaf2sdYK9LcW9G1FLH?s=cl&p=a&ilr=1",
+  "POWER PLAY": "https://chat.whatsapp.com/HrqQTsOixH8DrxNOyNBquU?s=cl&p=a&ilr=1",
+  "SQUID GAME": "https://chat.whatsapp.com/GhbLwzHj3nR9lBI7PcTrW7?s=cl&p=a&ilr=1",
+  "TEAM FUSION": "https://chat.whatsapp.com/LOnxl5OPhIsG5AFcqifbWD?s=cl&p=a&ilr=1",
+  "THE DETECTIVE CHRONICLES": "https://chat.whatsapp.com/B6oFA8V305gG8TtbN9DUcX?s=cl&p=a&ilr=1"
+};
+
 /* Optional social links — replace # with your official pages. */
 const SOCIAL_LINKS = {
   instagram: "https://www.instagram.com/techvox_.clique.__?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
-  email: "mailto:aura2026ece@gmail.com"
+  email: "mailto:aura26ece@gmail.com"
 };
 
 const EVENTS = {
@@ -257,6 +269,15 @@ function renderEvents() {
           <div class="event-icon">${category === "technical" ? "⌁" : "✦"}</div>
           <h3>${event.title}</h3>
           <div class="event-team">${event.team}</div>
+          <a class="event-whatsapp"
+             href="${WHATSAPP_GROUP_LINKS[event.title] || "#"}"
+             target="_blank"
+             rel="noopener noreferrer"
+             aria-label="Join ${event.title} WhatsApp group"
+             title="Join ${event.title} WhatsApp group"
+             onclick="event.stopPropagation();">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
           <div class="event-arrow">↗</div>
           <span class="tap-hint">VIEW DETAILS <i>→</i></span>
         </div>
@@ -291,6 +312,17 @@ function openEvent(category, index) {
   $("#modalTitle").textContent = event.title;
   $("#modalTeam").textContent = event.team;
   $("#modalAbout").textContent = event.about;
+
+  const whatsappBtn = $("#modalWhatsApp");
+  const whatsappLink = WHATSAPP_GROUP_LINKS[event.title] || "";
+  whatsappBtn.href = whatsappLink || "#";
+  whatsappBtn.classList.toggle("is-disabled", !whatsappLink);
+  whatsappBtn.onclick = (e) => {
+    if (!whatsappLink) {
+      e.preventDefault();
+      alert("WhatsApp group link for this event is not configured yet.");
+    }
+  };
 
   const rulesHeading = $("#modalRulesHeading");
   const rulesList = $("#modalRules");
