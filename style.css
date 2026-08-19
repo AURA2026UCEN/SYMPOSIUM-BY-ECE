@@ -1332,3 +1332,212 @@ font-size:18px;
 }
 
 }
+
+
+
+/* =========================================================
+   CREW / TEAM — AURA'26
+   ========================================================= */
+.crew{
+  position:relative;
+  overflow:hidden;
+  background:
+    radial-gradient(circle at 10% 20%,rgba(255,194,56,.10),transparent 28%),
+    radial-gradient(circle at 90% 70%,rgba(68,117,190,.10),transparent 30%);
+}
+.crew-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+  gap:40px;
+  margin-bottom:46px;
+}
+.crew-header h2{margin:10px 0 0}
+.crew-header h2 span{color:var(--gold,#d9a62e)}
+.crew-intro{
+  max-width:390px;
+  margin:0 0 3px;
+  color:rgba(20,39,72,.62);
+  font-size:12px;
+  line-height:1.8;
+  letter-spacing:.35px;
+}
+.crew-grid{
+  display:grid;
+  gap:18px;
+}
+.crew-leadership{
+  grid-template-columns:repeat(5,minmax(0,1fr));
+}
+.crew-executives{
+  grid-template-columns:repeat(5,minmax(0,1fr));
+}
+.crew-card{
+  position:relative;
+  min-height:238px;
+  padding:22px 20px 20px;
+  border:1px solid rgba(83,128,190,.30);
+  border-radius:20px;
+  background:linear-gradient(145deg,rgba(255,255,255,.84),rgba(224,235,249,.56));
+  box-shadow:0 15px 38px rgba(20,47,83,.08);
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
+  overflow:hidden;
+  transition:transform .3s ease,box-shadow .3s ease,border-color .3s ease;
+}
+.crew-card::before{
+  content:"";
+  position:absolute;
+  width:130px;height:130px;
+  top:-58px;right:-42px;
+  border-radius:50%;
+  background:rgba(255,194,56,.11);
+}
+.crew-card::after{
+  content:"";
+  position:absolute;
+  left:0;bottom:0;
+  width:100%;height:3px;
+  background:linear-gradient(90deg,transparent,#d9a62e,transparent);
+  opacity:.65;
+}
+.crew-card:hover{
+  transform:translateY(-7px);
+  box-shadow:0 24px 48px rgba(20,47,83,.14);
+  border-color:rgba(83,128,190,.55);
+}
+.crew-featured{
+  background:linear-gradient(145deg,#0d2348,#173865);
+  color:#fff;
+  border-color:rgba(255,194,56,.26);
+}
+.crew-featured .crew-info p{color:rgba(255,255,255,.58)}
+.crew-avatar{
+  position:relative;
+  z-index:1;
+  width:92px;height:92px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin-bottom:auto;
+  color:#14335f;
+  font-family:'Sora',sans-serif;
+  font-weight:800;
+  font-size:22px;
+  letter-spacing:1px;
+  background:linear-gradient(145deg,#f4f7fb,#b9cbe1);
+  border:3px solid rgba(255,194,56,.85);
+  box-shadow:0 0 0 6px rgba(255,255,255,.14),0 12px 28px rgba(16,42,78,.17);
+}
+.crew-featured .crew-avatar{
+  background:linear-gradient(145deg,#264a7c,#0b1e3e);
+  color:#ffd66b;
+}
+.crew-info{position:relative;z-index:1;margin-top:17px}
+.crew-role{
+  display:inline-block;
+  margin-bottom:8px;
+  color:#a87917;
+  font-size:8px;
+  font-weight:800;
+  letter-spacing:1.8px;
+}
+.crew-featured .crew-role{color:#ffd05a}
+.crew-info h3{
+  margin:0 0 7px;
+  font-family:'Sora',sans-serif;
+  font-size:16px;
+  line-height:1.2;
+  letter-spacing:-.35px;
+}
+.crew-info p{
+  margin:0;
+  color:rgba(20,39,72,.56);
+  font-size:9px;
+  text-transform:uppercase;
+  letter-spacing:1.35px;
+  font-weight:700;
+}
+.crew-subhead{
+  display:flex;
+  align-items:center;
+  gap:16px;
+  margin:52px 0 20px;
+}
+.crew-subhead span{
+  color:#a87917;
+  font-size:9px;
+  font-weight:800;
+  letter-spacing:1.8px;
+}
+.crew-subhead h3{
+  margin:0;
+  font-family:'Sora',sans-serif;
+  font-size:12px;
+  letter-spacing:2px;
+  color:#10284d;
+}
+.crew-subhead::after{
+  content:"";
+  height:1px;
+  flex:1;
+  background:rgba(72,112,167,.24);
+}
+
+@media (max-width:1100px){
+  .crew-leadership,.crew-executives{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@media (max-width:760px){
+  .crew-header{
+    display:block;
+    margin-bottom:30px;
+  }
+  .crew-intro{
+    max-width:100%;
+    margin-top:16px;
+    font-size:11px;
+  }
+  .crew-leadership,.crew-executives{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:12px;
+  }
+  .crew-card{
+    min-height:200px;
+    padding:16px 14px 15px;
+    border-radius:16px;
+  }
+  .crew-avatar{
+    width:72px;height:72px;
+    font-size:17px;
+    border-width:2px;
+    box-shadow:0 0 0 5px rgba(255,255,255,.14),0 8px 20px rgba(18,42,78,.14);
+  }
+  .crew-info{margin-top:12px}
+  .crew-info h3{font-size:12px}
+  .crew-info p{font-size:7px;letter-spacing:1px}
+  .crew-role{font-size:7px;margin-bottom:6px}
+  .crew-subhead{margin:34px 0 15px}
+}
+@media (max-width:420px){
+  .crew-leadership,.crew-executives{grid-template-columns:1fr}
+  .crew-card{min-height:185px}
+}
+
+
+/* Crew photos: just rename the PNG file in assets/crew/ and it will load automatically. */
+.crew-avatar{
+  overflow:hidden;
+}
+.crew-avatar img{
+  width:100%;
+  height:100%;
+  display:block;
+  object-fit:cover;
+  object-position:center;
+  border-radius:50%;
+}
+.crew-avatar img + *{
+  display:none;
+}
